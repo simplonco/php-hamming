@@ -2,6 +2,6 @@ language: php
 php:
     - 5.5
 script:
-  - php *test.php
+  - phpunit *test.php
 notifications:
     email: false
