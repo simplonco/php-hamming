@@ -5,9 +5,18 @@
 // convenience to get you started writing code faster.
 //
 
-function distance($a, $b)
+function Distance($a, $b)
 {
-    //
-    // YOUR CODE GOES HERE
-    //
+    $s1 = str_split($a);
+    $s2 = str_split($b);
+    $dh = 0;
+    for ($i = 0; $i < count($s1); $i++) 
+        if ($s1[$i] != $s2[$i]) 
+            $dh++;
+            return $dh;
+        
+    
 }
+echo Distance('10111010','01010111');
+
+?>
