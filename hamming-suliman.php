@@ -5,7 +5,7 @@
 // convenience to get you started writing code faster.
 //
 
-function Distance($a, $b)
+function distance($a, $b)
 {
     $s1 = str_split($a);
     $s2 = str_split($b);
@@ -17,6 +17,6 @@ function Distance($a, $b)
     	
     
 }
-echo Distance('10111010','01010111');
+echo distance('10111010','01010111');
 
 ?>
