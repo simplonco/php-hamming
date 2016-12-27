@@ -1,13 +1,20 @@
 <?php
 
-//
-// This is only a SKELETON file for the "Hamming" exercise. It's been provided as a
-// convenience to get you started writing code faster.
-//
-
+/**
+ * @param string $a
+ * @param string $b
+ * @return int distance
+ */
 function distance($a, $b)
 {
-    //
-    // YOUR CODE GOES HERE
-    //
+    if (strlen($a) !== strlen($b)) {
+        throw new InvalidArgumentException('DNA strands must be of equal length.');
+    }
+
+    return count(
+        array_diff_assoc(
+            str_split($a),
+            str_split($b)
+        )
+    );
 }
